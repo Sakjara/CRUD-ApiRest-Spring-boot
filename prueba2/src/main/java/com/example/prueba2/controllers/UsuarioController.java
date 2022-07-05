@@ -41,7 +41,7 @@ public class UsuarioController {
         return this.usuarioService.findByGender(gender);
     }
 
-    @PutMapping("{id}")
+    @PutMapping("/update/{id}")
     public UsuarioModel actualizarUsuario(@RequestBody UsuarioModel usuario, Long id){
         return this.usuarioService.actualizarUsuario(usuario, id);
     }
